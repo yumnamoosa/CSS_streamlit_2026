@@ -58,7 +58,7 @@ elif menu == "Publications":
 
     # Upload publications file
     #uploaded_file = st.file_uploader("Upload a CSV of Publications", type="csv")
-    uploaded_file = "/Users/yumnamoosa/Desktop/CSS2026/csv-yumnamoos.csv"
+    uploaded_file = "/csv-yumnamoos.csv"
     if uploaded_file:
         publications = pd.read_csv(uploaded_file)
         st.dataframe(publications)
@@ -133,4 +133,5 @@ elif menu == "Contact":
     # Add a contact section
     st.header("Contact Information")
     email = "dryumnamoosa@gmail.com"
+
     st.write(f"You can reach me at {email}.")
